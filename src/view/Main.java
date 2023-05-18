@@ -9,9 +9,10 @@ public class Main {
 		
 		NetflixController controll = new NetflixController();
 		
-//		controll.callFila();
-//		controll.callLista();
+		controll.callFila();
+		controll.callLista();
 		controll.callListaRating();
+		controll.consultaRating(7);
 	}
 
 }

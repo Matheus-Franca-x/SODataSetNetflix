@@ -250,4 +250,26 @@ public class NetflixController implements INetflixController
 			abreFlux.close();
 		}
 	}
+	
+	public void consultaRating(int num) throws Exception
+	{
+		if (num >= 0 && num <= 6)
+		{
+			int tamanho = listaRating[num].size();
+			
+			for (int i = 0; i < tamanho; i++)
+			{
+				Serie mostra = (Serie) listaRating[num].get(i);
+				System.out.println(mostra.toString());
+			}
+			
+		}
+		else
+		{
+			throw new Exception("Apenas classificacao de 0 a 6");
+		}
+	}
+	
+	
+	
 }
