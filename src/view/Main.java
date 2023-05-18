@@ -12,7 +12,7 @@ public class Main {
 		controll.callFila();
 		controll.callLista();
 		controll.callListaRating();
-		controll.consultaRating(7);
+		controll.consultaRating(5);
 	}
 
 }
